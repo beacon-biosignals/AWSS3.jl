@@ -1,6 +1,8 @@
 name: CI
 # Run on master, any tag or any pull request
 on:
+  schedule:
+    - cron: '0 6 * * *'  # Daily at 6 a.m. UTC
   push:
     branches:
       - master
